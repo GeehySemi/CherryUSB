@@ -30,6 +30,12 @@ Please note that host must support dma mode.
 - GD32F405、GD32F407
 - GD32F350、GD32F450
 
+### APM32
+
+- APM32F402xx、APM32F403xx、APM32F411xx、APM32F423xx、APM32F425xx、APM32F427xx、APM32F405xx、APM32F407xx、APM32F415xx、APM32F417xx、APM32F465xx
+
+**PA11/PA12 (OTG_FS) 支持 device 模式。F405/F407/F415/F417/F465 的 PB14/PB15 (OTG_HS) 可使用片内 FS PHY；需要 480 Mbps 时请外接 ULPI PHY 并定义 `CONFIG_USB_HS`，同时按板级连线调整 `usb_glue_apm.c` 中的 ULPI 引脚初始化。**
+
 ### HC32
 
 - HC32F4A0

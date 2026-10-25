@@ -65,6 +65,9 @@ if GetDepend(['PKG_CHERRYUSB_DEVICE']):
     if GetDepend(['PKG_CHERRYUSB_DEVICE_DWC2_GD']):
         src += Glob('port/dwc2/usb_dc_dwc2.c')
         src += Glob('port/dwc2/usb_glue_gd.c')
+    if GetDepend(['PKG_CHERRYUSB_DEVICE_DWC2_APM']):
+        src += Glob('port/dwc2/usb_dc_dwc2.c')
+        src += Glob('port/dwc2/usb_glue_apm.c')
     if GetDepend(['PKG_CHERRYUSB_DEVICE_DWC2_CUSTOM']):
         src += Glob('port/dwc2/usb_dc_dwc2.c')
     if GetDepend(['PKG_CHERRYUSB_DEVICE_MUSB_ES']):

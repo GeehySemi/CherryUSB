@@ -46,6 +46,8 @@ if RT_USING_CHERRYUSB
                 bool "dwc2_nation"
             config RT_CHERRYUSB_DEVICE_DWC2_GD
                 bool "dwc2_gd"
+            config RT_CHERRYUSB_DEVICE_DWC2_APM
+                bool "dwc2_apm"
             config RT_CHERRYUSB_DEVICE_DWC2_CUSTOM
                 bool "dwc2_custom"
             config RT_CHERRYUSB_DEVICE_MUSB_ES
